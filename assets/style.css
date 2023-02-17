@@ -145,12 +145,15 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 9);
+    background: rgba(255, 255, 255, .8);
     position: fixed;
-    top: 0; left: 0;
+    top: 0; right: -154%;
     z-index: 1000;
     height: 100%;
     width: 100%;
+}
+.login-form-container.active{
+    right: 0;
 }
 .login-form-container form{
     background: #fff;
@@ -206,6 +209,13 @@ html::-webkit-scrollbar-thumb{
 .login-form-container form p a{
     color: var(--green);
     text-decoration: underline;
+}
+.login-form-container #clos-login-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
 }
 
 
