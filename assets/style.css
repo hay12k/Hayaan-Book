@@ -136,16 +136,21 @@ html::-webkit-scrollbar-thumb{
     .header .header-2{
         display: none;
     }
+    #search-btn{
+        display: inline-block;
+    }
     .header .header-1{
         box-shadow: var(--box-shadow);
         position: relative;
     }
     .header .header-1 .search-form{
         position: absolute;
-        top: 115%; right: 2rem;
+        top:-115%; right: 2rem;
         width: 90%;
         box-shadow: var(--box-shadow);
-
+    }
+    .header .header-1 .search-form.active{
+        top: 115%;
     }
 }
 
